@@ -1,13 +1,12 @@
-/**
- * User: perrym
- * Date: 26.03.13
- * Time: 0:50
- */
 import org.mgk.Tools.CallableImpl;
 import org.mgk.Tools.ThreadResult;
 
-import java.util.*;
-import java.util.concurrent.*;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class Application {
     public static void main(String[] args) {
@@ -26,6 +25,7 @@ public class Application {
 			    res.print();
 		    }
 		    catch (Exception e) {
+		    	System.out.println(e.getMessage());
 		    }
 	    }
 

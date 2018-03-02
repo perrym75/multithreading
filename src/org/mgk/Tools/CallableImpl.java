@@ -1,12 +1,7 @@
 package org.mgk.Tools;
 
-import java.util.concurrent.*;
+import java.util.concurrent.Callable;
 
-/**
- * User: perrym
- * Date: 31.03.13
- * Time: 15:37
- */
 public class CallableImpl implements Callable<ThreadResult> {
 	private volatile boolean _running;
 	private ThreadResult _result;
